@@ -26,8 +26,9 @@ runtime macros/matchit.vim
 " Turn on syntax highlighting
 syntax on
 
-" Fix recognizing .jl files
+" Override file recognition
 autocmd BufNewFile,BufRead *.jl set ft=julia
+autocmd BufNewFile,BufRead *.pest set ft=pest
 
 " Leader / local leader
 let mapleader = ","
